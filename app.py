@@ -1,6 +1,3 @@
-
-import os
-os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
 import streamlit as st
 from ultralytics import YOLO
 import cv2
