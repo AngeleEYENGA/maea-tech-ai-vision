@@ -1,37 +1,25 @@
-<<<<<<< HEAD
-streamlit==1.32.0
-ultralytics==8.2.0
-opencv-python-headless
-numpy
-pandas
-plotly
-torch
-pillow
-=======
-streamlit==1.56.0
-ultralytics==8.2.0
+# 1. Remplacer le contenu du fichier
+cat > requirements.txt << 'EOF'
+streamlit>=1.35.0,<2.0.0
+ultralytics>=8.2.0
+opencv-python-headless>=4.9.0
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+plotly>=5.17.0
+Pillow>=10.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+folium>=0.14.0
+geopy>=2.3.0
+streamlit-folium>=0.15.0
+requests>=2.31.0
+reverse-geocoder>=1.5.1
+streamlit-js-eval>=0.1.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+EOF
 
-opencv-python-headless==4.8.1.78
-
-numpy
-pandas
-plotly
-Pillow
-
-torch==2.0.1
-torchvision==0.15.2
-
->>>>>>> dcd282e (Fix Streamlit Cloud compatibility (python + YOLO))
-folium
-geopy
-<<<<<<< HEAD
-streamlit-folium
-requests
-reverse-geocoder
-=======
-reverse-geocoder
-streamlit-js-eval
-requests
-matplotlib
-scipy
->>>>>>> dcd282e (Fix Streamlit Cloud compatibility (python + YOLO))
+# 2. Commit et push
+git add requirements.txt
+git commit -m "Fix requirements.txt - remove git conflict markers"
+git push
