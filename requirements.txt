@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+streamlit==1.32.0
+ultralytics==8.2.0
+opencv-python-headless
+numpy
+pandas
+plotly
+torch
+pillow
+=======
 streamlit==1.56.0
 ultralytics==8.2.0
 
@@ -11,11 +21,17 @@ Pillow
 torch==2.0.1
 torchvision==0.15.2
 
+>>>>>>> dcd282e (Fix Streamlit Cloud compatibility (python + YOLO))
 folium
-streamlit-folium
 geopy
+<<<<<<< HEAD
+streamlit-folium
+requests
+reverse-geocoder
+=======
 reverse-geocoder
 streamlit-js-eval
 requests
 matplotlib
 scipy
+>>>>>>> dcd282e (Fix Streamlit Cloud compatibility (python + YOLO))
